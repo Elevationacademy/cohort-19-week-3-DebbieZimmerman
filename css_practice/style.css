@@ -41,8 +41,8 @@
 
 #container {
     display: grid;
-    height: 100vh;
-    width: 100%;
+    height: 95vh;
+    width: 99vw;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 15fr 1fr;
     grid-template-areas: 
@@ -83,6 +83,7 @@ p {
     width: fit-content;
     border-radius: 5px;
     grid-template-areas: 
+    "t ."
     "t ti";
 }
 .outgoing {
@@ -93,7 +94,7 @@ p {
     border-radius: 5px;
     justify-self: right;
     padding-right: 5px;
-    grid-template-areas: "t ti";
+    grid-template-areas: "t ." "t ti";
 
 }
 .text {
@@ -108,7 +109,7 @@ p {
 .time {
     grid-area: ti;
     display: grid;
-    vertical-align: bottom;
+    align-items: bottom;
     font-size: 15px;
     font-weight: 1000;
     font-family: 'Shadows Into Light', cursive;
