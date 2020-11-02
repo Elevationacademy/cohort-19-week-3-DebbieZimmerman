@@ -1,0 +1,126 @@
+/*add media query
+/* @media(max-width: 768px){
+    input{
+      display: block;
+    }
+  } */
+  /*
+  #container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "h h h h h h" 
+    "s s h h f f"
+    "s s . . f f"
+    "s s m m f f"
+    /* "s f f f f f";
+  }
+
+  .head{
+    grid-area: h;
+    background-color: aquamarine;
+}
+
+.side-nav{
+    grid-area: s;
+    background-color: rgb(0, 132, 255);
+}
+
+.main{
+    grid-area: m
+}
+
+.foot{
+    grid-area: f;
+    background-color: aqua;
+}
+*/
+
+#container {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15fr 1fr;
+    grid-template-areas: 
+    "s m"
+    "s c"
+    ;
+}
+.side-nav {
+    grid-area: s;
+    display: grid;
+    background-color: #834197;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
+    
+}
+
+.main {
+    grid-area: m;
+    display: grid;
+    background-color: rgb(218, 211, 211);
+    padding-left: 5px;
+    
+}
+p {
+    display: grid;
+    align-content: center;
+    /* background-color: rgba(179, 100, 179, 0.712); */
+    font-family: Montserrat;
+    font-size: smallest;
+    height: fit-content;
+}
+.incoming {
+    display: grid;
+    align-content: center;
+    background-color: rgb(201, 191, 191);
+    height: fit-content;
+    width: fit-content;
+    border-radius: 5px;
+    grid-template-areas: 
+    "t ti";
+}
+.outgoing {
+    display: grid;
+    background-color: #40e07d;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 5px;
+    justify-self: right;
+    padding-right: 5px;
+    grid-template-areas: "t ti";
+
+}
+.text {
+    grid-area: t;
+    display: grid;
+    font-size: 20px;  
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 1000;
+    padding-right: 10px;
+    
+}
+.time {
+    grid-area: ti;
+    display: grid;
+    vertical-align: bottom;
+    font-size: 15px;
+    font-weight: 1000;
+    font-family: 'Shadows Into Light', cursive;
+    
+}
+
+#chatbar {
+    grid-area: c;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+#send {
+    background-color: #834197;
+    color: white;
+}
