@@ -1,0 +1,41 @@
+/* spot check 3
+.box {
+    display: block;
+    height: 10vw;
+    width: 10vw;
+    margin: 1px;
+    background-color: turquoise; 
+} */
+
+/* spot check 8 */
+/* .box{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: purple;
+    display: inline-block;
+  } */
+
+  /* exercise 4 */
+  .item{
+    width: 100px;
+    margin: 10px;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 3px;
+    display: inline-block;
+    text-align:center;
+    font-weight: bold;
+    user-select: none;
+    cursor:pointer;
+  }
+  
+  [data-instock="false"]{
+    color: gray;
+    font-weight: normal;
+  }
+  
+  #cart{
+    margin: 10px;
+  }
+  
+  
