@@ -20,7 +20,7 @@ $(".item").click(function () {
     $("#cart").append(`<div class="cart-item">${$(this).text()}</div>`)
 }})
 
-// render
+// Data Flow Exercise
 // const posts = [
 //     {name: "Debbie", text: "You're the best!"},
 //     {name: "Aliza", text: "No, you're the best!"}
